@@ -26,7 +26,7 @@ class AdventureView(DetailView):
     model = Culture
 
     def get_object(self):
-        culture = get_object_or_404(Culture, name=self.kwargs['name'])
+        culture = get_object_or_404(Culture, name__icontains=self.kwargs['name'])  # NOQA
         return culture
 
     def get_context_data(self, **kwargs):
