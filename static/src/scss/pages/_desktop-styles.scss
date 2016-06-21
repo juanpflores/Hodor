@@ -232,6 +232,122 @@
 		}
 	}
 }
+//Landig
+#heroLand {
+	background: #00122e;
+	& img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+	}
+	.figures {
+		top: 1rem;
+		left: 5rem;
+	}
+	& h2 {
+		margin: 0;
+		color: white;
+		text-align: center;
+		padding: 15rem 0 5rem 0;
+	}
+	& .form-tema {
+		border-radius: 100px;
+		padding: 1rem;
+		border: 2px solid white;
+		width: 50%;
+		margin-left: 25%;
+		& input {
+			background: none;
+			border: none;
+			outline: 0;
+			width: 80%;
+			color: white;
+		}
+		& .buscar-button {
+			background-image: linear-gradient(to bottom, #199de0, #046ee9);
+			border-radius: 100px;
+			float: right;
+			border-radius: 100px;
+			border: 0px;
+			color: white;
+			padding: .3rem 2rem;
+		}
+	}
+	& .themes {
+		margin-left: 20%;
+		padding-top: 3rem;
+		& span {
+			text-transform: uppercase;
+			color: white;
+		}
+		& ul {
+			list-style: none;
+			color: white;
+			width: 70%;
+			margin-left: 4%;
+			margin-bottom: 0;
+			& li {
+				margin-bottom: 2rem;
+				display: inline-block;
+				width: 30%;
+				border-radius: 100px;
+				border: 2px solid white;
+				text-align: center;
+				padding: .5rem 2rem;
+			}
+		}
+	}
+	
+}
+#usLand {
+	background: #00122e;
+	& .us-info {
+		width: 30%;
+		margin-left: 20%;
+		padding-top: 5rem;
+		& h2 {
+			color: #f0d609;
+			margin: 0;
+		}
+		& p {
+			color: white;
+			margin-bottom: 3rem;
+			font-weight: 300;
+		}
+		& .suscribe-button {
+			border-radius: 100px;
+			color: #d31f72;
+			background: #f0d609;
+			border: 0;
+			padding: .5rem 2rem;
+		}
+		& img {
+			position: absolute;
+			right: 0;
+			width: 30%;
+			margin-top: -20rem;
+		}
+	}
+}
+#monthLand {
+	background-image: url("/static/img/land/sun-land.png");
+	background-size: 90% 90%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 70rem;
+	& .form-image {
+		width: 100%;
+		margin-top: 35rem;
+	}
+	& .play-image {
+		position:absolute;
+		margin-top: 45rem;
+		margin-left: 50rem;
+	}
+}
+
+
 //Footer 
 footer {
 	padding: 4rem 15rem;

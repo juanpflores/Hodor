@@ -2,6 +2,53 @@
 {% load static %}
 {% block title %}{% endblock %}
 {% block content %}
+  <div id="heroLand">
+    <img src="{% static 'img/land/blue-land.png' %}" alt="">
+    <img class="figures" src="{% static 'img/land/figures-land.png' %}" alt="">
+    <h2>¿Qué quieres aprender hoy?</h2>
+    <div class="form-tema">
+      <input type="text" placeholder="Buscar por tema">
+      <button class="buscar-button">Buscar</button>
+    </div>
+    <div class="themes">
+      <span>Temas Populares</span>
+      <ul>
+        <li>Aventura Maya</li>
+        <li>Antiguo Egipto</li>
+        <li>Mesopotamia</li>
+        <li>Mar profundo</li>
+        <li>El Sistema solar</li>
+        <li>Pais: México</li>
+      </ul>
+    </div>
+  </div>
+  <div id="usLand">
+    <div class="us-info">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Culturely es la primera plataforma
+        de educación hecha por y para
+        jovenes.
+      </p>
+      <p>
+        Prepara tu tarea, estudia para
+        tus pruebas y domina el tema
+        sin aburrirte.
+      </p>
+      <button class="suscribe-button">Suscribete</button>
+      <img src="{% static 'img/land/pyramid-land.png' %}" alt="">
+      <img src="{% static 'img/land/sky-land.png' %}" alt="">
+    </div>
+  </div>
+  <div id="monthLand">
+    <img class="play-image" src="{% static 'img/land/play-land.png' %}" alt="">
+    <img class="form-image" src="{% static 'img/land/form-land.png' %}" alt="">
+  </div>
+  <style>
+    body {
+      background: #00122e;
+    }
+  </style>
 {% endblock %}   
 {% block css %}
 {% endblock %}
