@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}{% endblock %}
+{% block title %}Cultura {{ culture.name|title }}{% endblock %}
 {% block content %}
     <div id="heroMaya">
         <img class="orangeBackground" src="{% static 'img/maya/orangeBackground-maya.png' %}" alt="">
@@ -42,14 +42,17 @@
         <div class="blueLevel">
             <div class="temple-maya">
                 <span class="level">Nivel 3</span>
-                <h2>Historia Maya</h2>
+                <h2>Historia {{ culture.name|title }}</h2>
             </div>
             <ul>
-                <li>Arcaico</li>
+                {% for period in periods %}
+                    <li>{{ period.period.name|title }}</li>
+                {% endfor %}
+                <!-- <li>Arcaico</li>
                 <li>Pre Clásico</li>
                 <li>Clásico</li>
                 <li>Post Clásico</li>
-                <li>Periodo de Contacto</li>
+                <li>Periodo de Contacto</li> -->
             </ul>
             <div class="blue-content">
                 <p>
@@ -64,6 +67,9 @@
                     <p>
                         Los mayas produjeron una gran variedad de estructuras arquitectónicas y dejaron un extenso legado arquitectónico, que sitúan a la civilización maya entre las grandes civilizaciones preindustriales del mundo. La arquitectura maya también incorpora textos glíficos y varias formas de arte. La arquitectura de mampostería de los mayas es evidencia de la existencia de especialización artesanal en la sociedad maya, así como una organización centralizada y los medios políticos para movilizar una gran fuerza de trabajo. Se estima que para la construcción de una gran residencia de élite en Copán se necesitaba unos 10.686 días-hombre; en comparación, para la vivienda de un comunero se necesitaba aproximadamente 67 días-hombre
                     </p>
+                    {% for t in temples %}
+                        <p>{{ t.description }}</p>
+                    {% endfor %}
                 </div>
                 <div>
                     <img class="zona2" src="{% static 'img/maya/zona2-maya.png' %}" alt="">
