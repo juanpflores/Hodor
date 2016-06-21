@@ -18,7 +18,7 @@ from .models import (
 
 
 class LandingView(ListView):
-    template_name = 'prueba.html'
+    template_name = 'landing.html'
     model = Culture
 
     def get_queryset(self):
