@@ -1,5 +1,5 @@
-# Cultur.li
-Cultur.li es una plataforma educativa e interactiva orientada a los niños para aprender y conocer acerca
+# Culture.ly
+Culturely es una plataforma educativa e interactiva orientada a los niños para aprender y conocer acerca
 de distintos hámbitos, entre ellos ciencia y cultura.
 
 ## Instalación
