@@ -20,6 +20,7 @@ DJANGO_APPS = (
 LOCAL_APPS = (
     'cultures',
     'places',
+    'quizzes',
 )
 
 THIRD_PARTY_APPS = (

@@ -1,0 +1,88 @@
+[
+    {
+        "model": "quizzes.question",
+        "pk": 1,
+        "fields": {
+            "culture": 1,
+            "question": "Esta es una pregunta",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.question",
+        "pk": 2,
+        "fields": {
+            "culture": 1,
+            "question": "Esta es una pregunta 2",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 1,
+        "fields": {
+            "question": 1,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": true,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 2,
+        "fields": {
+            "question": 1,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": false,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 3,
+        "fields": {
+            "question": 1,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": false,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 4,
+        "fields": {
+            "question": 2,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": true,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 5,
+        "fields": {
+            "question": 2,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": false,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "quizzes.answer",
+        "pk": 6,
+        "fields": {
+            "question": 2,
+            "answer": "Esto es una respuesta." ,
+            "is_correct": false,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    }
+]

@@ -35,5 +35,5 @@ class AdventureView(DetailView):
         context['gods'] = God.objects.filter(culture=self.get_object().pk)
         context['temples'] = Temple.objects.filter(culture=self.get_object().pk)  # NOQA
         context['museums'] = Museum.objects.filter(cultures=self.get_object().pk)  # NOQA
-        context['periods'] = CultureHasPeriod.objects.filter(culture=self.get_object().pk)  # NOQA
+        context['periods'] = CultureHasPeriod.objects.filter(culture=self.get_object().pk).order_by('pk')  # NOQA
         return context
