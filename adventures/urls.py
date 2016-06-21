@@ -40,7 +40,7 @@ urlpatterns = [
     url(
         r'^sistema-solar/$',
         TemplateView.as_view(
-            template_name='solar.html'
+            template_name='landing-solar.html'
         ),
         name='solar'
     ),
