@@ -1,0 +1,46 @@
+#heroMaya {
+	background: #f5a623;
+	height: 50rem;
+	& img {
+		position: absolute;
+	}
+	
+
+	
+	& .sun {
+		z-index: 0;
+		right: 18rem;
+		top: 7rem;
+	}
+	& .orangeBackground {
+		z-index: 1;
+		top: 22rem;
+		right: 5rem;
+	}
+	& .title {
+		z-index: 2;
+		top: 7rem;
+		right: 32rem;
+	}
+	& .palm {
+		z-index: 3;
+		top: 28rem;
+		right: 9rem
+	}
+	& .pyramid {
+		z-index: 4;
+		top: 22rem;
+		right: 13rem;
+
+	}
+
+	& .pinkBackground {
+		z-index: 5;
+		top: 18rem;
+	}
+	
+	
+	
+
+
+}
