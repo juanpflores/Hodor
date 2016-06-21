@@ -1,6 +1,9 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
 #heroMaya {
 	background: #f5a623;
-	height: 24.5rem;
+	height: 37rem;
 	& img {
 		position: absolute;
 		width: 100%;
@@ -27,5 +30,41 @@
 	& .pinkBackground {
 		z-index: 5;
 	}
+}
+#levelsMaya {
+	& .camino-linea {
+		position: absolute;
+		margin-top: 7rem;
+		margin-left: 3rem;
+	}
+	& .pinkLevel {
+		background: #e5006c;
+		padding: 5rem 21rem;
 
+		& .level2 {
+			text-align: right;
+		}
+		& p {
+			color: white;
+			font-weight: 300;
+			padding: 5rem 0;
+		}
+		& .map-maya {
+			float: right;
+			width: 50%;
+			margin-top: 15rem;
+		}
+	}
+	.level {
+		border-radius: 100px;
+		padding: .7rem 2.5rem;
+		background: #f5a623;
+		color: white;
+	}
+	.theme {
+		border-radius: 100px;
+		padding: .7rem 2.5rem;
+		background: #f0d609;
+		color: #e5006c;
+	}
 }
