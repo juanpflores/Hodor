@@ -13,7 +13,7 @@ class Question(models.Model):
     modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return "Question: {question}".format(self.question)
+        return "Question: {question}".format(question=self.question)
 
 
 class Answer(models.Model):
