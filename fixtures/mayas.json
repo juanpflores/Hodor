@@ -119,7 +119,7 @@
         "model": "cultures.period",
         "pk": 1,
         "fields": {
-            "name": "Preclásico",
+            "name": "Arcaíco",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
@@ -128,7 +128,7 @@
         "model": "cultures.period",
         "pk": 2,
         "fields": {
-            "name": "Clásico",
+            "name": "Preclásico",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
@@ -137,7 +137,25 @@
         "model": "cultures.period",
         "pk": 3,
         "fields": {
+            "name": "Clásico",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 4,
+        "fields": {
             "name": "Posclásico",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 5,
+        "fields": {
+            "name": "Periodo de Contacto",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
@@ -220,9 +238,9 @@
         "fields": {
             "period": 1,
             "culture": 1,
-            "begining_year": "2000 a.C.",
-            "ending_year": "250 d.C.",
-            "description": "Los mayas desarrollaron su primera civilización en el período Preclásico. Los estudiosos continúan discutiendo cuando comenzó ésta era de la civilización maya. La ocupación maya en Cuello, Belice ha sido fechada alrededor de 2600 a. C. Los asentamientos se establecieron alrededor de 1800 a. C. en la región del Soconusco en la costa del Pacífico, y los mayas ya cultivaban cultivos básicos como maíz, frijol, calabaza y chile. Este período se caracterizó por la existencia de comunidades sedentarias y la introducción de la cerámica y figurillas de barro cocido.",
+            "begining_year": "8000 a.C.",
+            "ending_year": "2000 a.C.",
+            "description": "Viejo.",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
@@ -233,9 +251,9 @@
         "fields": {
             "period": 2,
             "culture": 1,
-            "begining_year": "250 d.C.",
-            "ending_year": "900 d.C.",
-            "description": "El período Clásico se define en gran medida como el período en que los mayas de las tierras bajas levantaron monumentos fechados, utilizando el calendario de la Cuenta larga.Este período marcó el apogeo de la construcción a gran escala y del urbanismo, la realización de inscripciones monumentales, y mostró un desarrollo intelectual y artístico significativo, sobre todo en las regiones de las tierras bajas del sur.El panorama político del período Clásico maya, caracterizado por múltiples ciudades-Estado involucrados en una compleja red de alianzas y enemistades, ha sido comparado con el de Italia durante el Renacimiento o Grecia clásica. Las ciudades mayores tenían una población de 50.000 a 120.000 habitantes y estaban conectados por redes de ciudades subsidiarias.",
+            "begining_year": "2000 a.C.",
+            "ending_year": "250 d.C.",
+            "description": "Los mayas desarrollaron su primera civilización en el período Preclásico. Los estudiosos continúan discutiendo cuando comenzó ésta era de la civilización maya. La ocupación maya en Cuello, Belice ha sido fechada alrededor de 2600 a. C. Los asentamientos se establecieron alrededor de 1800 a. C. en la región del Soconusco en la costa del Pacífico, y los mayas ya cultivaban cultivos básicos como maíz, frijol, calabaza y chile. Este período se caracterizó por la existencia de comunidades sedentarias y la introducción de la cerámica y figurillas de barro cocido.",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
@@ -246,9 +264,35 @@
         "fields": {
             "period": 3,
             "culture": 1,
+            "begining_year": "250 d.C.",
+            "ending_year": "900 d.C.",
+            "description": "El período Clásico se define en gran medida como el período en que los mayas de las tierras bajas levantaron monumentos fechados, utilizando el calendario de la Cuenta larga.Este período marcó el apogeo de la construcción a gran escala y del urbanismo, la realización de inscripciones monumentales, y mostró un desarrollo intelectual y artístico significativo, sobre todo en las regiones de las tierras bajas del sur.El panorama político del período Clásico maya, caracterizado por múltiples ciudades-Estado involucrados en una compleja red de alianzas y enemistades, ha sido comparado con el de Italia durante el Renacimiento o Grecia clásica. Las ciudades mayores tenían una población de 50.000 a 120.000 habitantes y estaban conectados por redes de ciudades subsidiarias.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 4,
+        "fields": {
+            "period": 4,
+            "culture": 1,
             "begining_year": "950 d.C.",
             "ending_year": "1539 d.C.",
             "description": "Después del abandono de las principales ciudades del período Clásico, una significativa, aunque mucho más reducida, presencia maya permaneció en el periodo Posclásico, concentrándose sobre todo cerca de las fuentes de agua permanentes.  A diferencia de los ciclos de contracción anteriores en la región maya, las tierras abandonadas no fueron rápidamente reasentadas durante el Posclásico.El centro de actividad se trasladó a las tierras bajas del norte y las tierras altas mayas; es posible que esto haya coincidido con la migración desde las tierras bajas del sur, ya que muchos grupos del Posclásico maya tenían mitos sobre migraciones.Chichén Itzá y sus vecinos Puuc declinaron drásticamente en el siglo xi, lo que puede representar el episodio final del período del colapso clásico. Después de la caída de Chichén Itzá, la región maya carecía de un poder dominante hasta el surgimiento de la ciudad de Mayapán en el siglo XII. Nuevas ciudades surgieron cerca de las costas del Caribe y del golfo de México, y se formaron nuevas redes comerciales.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 5,
+        "fields": {
+            "period": 5,
+            "culture": 1,
+            "begining_year": "1511 d.C.",
+            "ending_year": "1697 d.C.",
+            "description": "Nuevo.",
             "created": "2016-05-06T20:02:24.127Z", 
             "modified": "2016-05-06T20:02:24.128Z"
         }
