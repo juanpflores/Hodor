@@ -38,6 +38,7 @@ body {
 	}
 }
 #levelsMaya {
+	z-index: 100;
 	& .camino-linea {
 		display: none;
 	}

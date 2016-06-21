@@ -1,8 +1,9 @@
 //MAYA
 #heroMaya {
-	height: 37rem;
+	height: 38rem;
 }
 #levelsMaya {
+	z-index: 15;
 	& .camino-linea {
 		position: absolute;
 		margin-top: 7rem;
