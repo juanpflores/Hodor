@@ -23,6 +23,7 @@ class Region(models.Model):
 
     name = models.CharField(max_length=500, unique=True)
     country = models.ForeignKey(Country, blank=True, null=True)
+    description = models.TextField(default='')
 
     # Metadata
     created = models.DateTimeField(auto_now_add=True)
@@ -45,6 +46,7 @@ class Place(models.Model):
     region = models.ForeignKey(Region)
     latitude = models.FloatField(blank=True, null=True)
     longitude = models.FloatField(blank=True, null=True)
+    description = models.TextField(default='')
 
     # Metadata
     created = models.DateTimeField(auto_now_add=True)

@@ -28,3 +28,7 @@ class AdventureView(DetailView):
     def get_object(self):
         culture = get_object_or_404(Culture, name=self.kwargs['name'])
         return culture
+
+    def get_context_data(self, **kwargs):
+        context = super(AdventureView, self).get_context_data(**kwargs)
+        return context

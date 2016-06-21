@@ -52,6 +52,8 @@ class Culture(models.Model):
     name = models.CharField(max_length=250, unique=True)
     region = models.ForeignKey(Region, blank=True)
     languages = models.ManyToManyField(Language)
+    summary = models.TextField(default='')
+    history = models.TextField(default='')
     _year = models.PositiveIntegerField(default=1)
     _era = models.CharField(max_length=2, choices=ERAS)
     religion = models.ForeignKey(Religion, blank=True, null=True)
@@ -85,6 +87,7 @@ class God(models.Model):
 
     name = models.CharField(max_length=550, unique=True)
     culture = models.ForeignKey(Culture, blank=True, null=True)
+    description = models.TextField(default='')
 
     def __str__(self):
         return "{name} of {culture}".format(
@@ -105,6 +108,7 @@ class Temple(models.Model):
     name = models.CharField(max_length=500)
     culture = models.ForeignKey(Culture)
     place = models.ForeignKey(Place)
+    description = models.TextField(default='')
 
     def __str__(self):
         return "Temple {name} of {culture} at {place}".format(
@@ -126,6 +130,7 @@ class Museum(models.Model):
     name = models.CharField(max_length=500)
     cultures = models.ManyToManyField(Culture)
     place = models.ForeignKey(Place)
+    description = models.TextField(default='')
 
     def __str__(self):
         return "Museum: {name}".format(
