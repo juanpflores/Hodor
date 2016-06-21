@@ -3,7 +3,7 @@ body {
 }
 #heroMaya {
 	background: #f5a623;
-	height: 37rem;
+	height: 100vh;
 	& img {
 		position: absolute;
 		width: 100%;
@@ -15,6 +15,7 @@ body {
 	& .orangeBackground {
 
 		z-index: 1;
+		bottom: 0;
 	}
 	& .title {
 
@@ -23,12 +24,15 @@ body {
 	& .palm {
 
 		z-index: 3;
+		bottom: 0;
 	}
 	& .pyramid {
 		z-index: 4;
+		bottom: 0;
 	}
 	& .pinkBackground {
 		z-index: 5;
+		bottom: 0;
 	}
 }
 #levelsMaya {
