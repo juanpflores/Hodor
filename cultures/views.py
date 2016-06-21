@@ -7,12 +7,11 @@ from django.views.generic import(
 )
 
 from .models import (
-    Language,
-    Religion,
     Culture,
     God,
     Temple,
-    Museum
+    Museum,
+    CultureHasPeriod,
 )
 
 
@@ -22,6 +21,8 @@ class LandingView(ListView):
 
 
 class AdventureView(DetailView):
+
+    context_object_name = 'culture'
     template_name = 'landing-maya.html'
     model = Culture
 
@@ -31,4 +32,8 @@ class AdventureView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(AdventureView, self).get_context_data(**kwargs)
+        context['gods'] = God.objects.filter(culture=self.get_object().pk)
+        context['temples'] = Temple.objects.filter(culture=self.get_object().pk)  # NOQA
+        context['museums'] = Museum.objects.filter(cultures=self.get_object().pk)  # NOQA
+        context['periods'] = CultureHasPeriod.objects.filter(culture=self.get_object().pk)  # NOQA
         return context
