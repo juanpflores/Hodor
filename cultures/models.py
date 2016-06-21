@@ -27,6 +27,7 @@ class Language(models.Model):
 class Religion(models.Model):
 
     name = models.CharField(max_length=250, unique=True)
+    description = models.TextField(default='')
 
     # Metadata
     created = models.DateTimeField(auto_now_add=True)
