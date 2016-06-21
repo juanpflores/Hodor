@@ -41,7 +41,7 @@ body {
 		position: absolute;
 		margin-top: 7rem;
 		margin-left: 3rem;
-		width: 100%;
+		right: 0;
 		z-index: 0;
 	}
 	& .pinkLevel {
@@ -51,7 +51,6 @@ body {
 			padding-bottom: 3rem;
 		}
 		& .level2 {
-			text-align: right;
 			padding: 3rem 0;
 		}
 		& p {
@@ -102,7 +101,6 @@ body {
 				padding: 1.5rem 0;
 			}
 			& .level4 {
-				text-align: right;
 				padding-bottom: 3rem;
 			}
 			& div {
@@ -121,7 +119,7 @@ body {
 			}
 			& .page2 {
 				position: absolute;
-				margin-top: 3rem;
+				margin-top: 2.9rem;
 				right: 15rem;
 			}
 		}
@@ -144,9 +142,34 @@ body {
 	}
 }
 
+
+
 .parallax-layer{
 	  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+#othersMaya {
+	& .solar-maya {
+		background-image: url("/static/img/maya/solar-maya.png");
+	}
+	& .sea-maya {
+		background-image: url("/static/img/maya/sea-maya.png");
+	}
+	& div {
+		width: 50%;
+		float:left;
+		z-index: 10;
+		height: 15rem;
+		background-size: cover;
+		& h2 {
+			color: white;
+			font-size: 3em;
+			margin: 4rem 0 0 5rem;
+			width: 50%;
+		}
+	}
+
 }
