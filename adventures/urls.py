@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 from cultures import urls as cultures_urls
+from quizzes import urls as quizzes_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -12,6 +13,14 @@ urlpatterns = [
         include(
             cultures_urls,
             namespace='cultures'
+        )
+    ),
+
+    url(
+        '',
+        include(
+            quizzes_urls,
+            namespace='quizzes'
         )
     ),
 
