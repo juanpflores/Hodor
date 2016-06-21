@@ -144,10 +144,8 @@ body {
 
 #othersMaya {
 	& .solar-maya {
-		background-image: url("/static/img/maya/solar-maya.png");
-		transition: all .2s ease-in-out;
-		cursor: pointer;
-		&:hover { transform: scale(1.1); }
+		background-image: url("/static/img/maya/maya-solar.png");
+		background-size: cover;
 	}
 	& .sea-maya {
 		background-image: url("/static/img/maya/sea-maya.png");
@@ -167,5 +165,133 @@ body {
 			margin: 4rem 0 0 5rem;
 			width: 50%;
 		}
+	}
+}
+
+//Solar 
+
+.solar-system{
+
+      background-color: #00122d ;
+      color: white;
+      padding: 3rem;
+}
+.hero{ 
+	background-image: url("/static/img/solar/sun-solar.png");
+	& .star-div {
+		background-image: url("/static/img/solar/stars-solar.png");
+		color: white;
+		text-align: center;
+		& h3 {
+			margin: 0;
+			padding-top: 3rem;
+		}
+	}
+	& article {
+		color: white;
+		padding-top: 5rem;
+		 p {
+		 	margin: 0;
+		 }
+	}
+}
+.planets-container{
+	overflow-x: hidden;
+	background: #00122d;
+    article{
+    	padding-top: 2rem;
+    	& img {
+    		position: absolute;
+    		display: none;
+    	}
+    	& .orbita {
+    		position: relative;
+    		width: 100%;
+    	}
+    	& .planet-mercurio {
+    		margin-top: -5rem;
+    		margin-left: 10rem;
+    		z-index: 1;
+    	}
+    	& .planet-venus {
+    		margin-top: -5rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-tierra {
+    		margin-top: -9rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-marte {
+    		margin-top: -5rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-jupiter {
+    		margin-top: -10rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-saturno {
+    		margin-top: -9rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-urano {
+    		margin-top: -8rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-neptuno {
+    		margin-top: -6rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+   		& div{
+   			padding-top: 2rem;
+        	color: white;
+    	}
+    }
+    .page-2 {
+    	display: none;
+
+    }
+}
+
+#othersSolar {
+	& .solar-maya {
+		background-image: url("/static/img/solar/maya-solar.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
+	}
+	& .sea-maya {
+		background-image: url("/static/img/maya/sea-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
+	}
+	&  div {
+		float:left;
+		z-index: 10;
+		background-size: cover;
+		& h2 {
+			color: white;
+			font-size: 2em;
+			margin: 4rem 0 0 5rem;
+			width: 50%;
+		}
+	}
+}
+//Footer 
+footer {
+	padding: 4rem 15rem;
+	background: #4a4a4a;
+	margin-top: 15rem;
+	width: 100%;
+	display: none;
+	& span {
+		color: white;
 	}
 }
