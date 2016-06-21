@@ -2,104 +2,91 @@
 {% load static %}
 {% block title %}Sistema Solar{% endblock %}
 {% block content %}
-<div class="hero">
-	<h3 class="subheader">EXPLORANDO EL </h3>
-	<h1 class="main-title">Sistema Solar</h1>
-	<img src="" alt="Sol" id="sun">
-	<img src="" alt="orbita-1" class="orbita-1">
-	<img src="" alt="orbita-2" class="orbita-2">
-	<img src="" alt="orbita-3" class="orbita-3">
-	
-	<article class="planet-description">
-		<h2>Sol</h2>
-		<p class="description">El Sol, una estrella de tipo espectral G2 que contiene más del 99,85 % de la masa del sistema. Con un diámetro de 1 400 000 km, se compone de un 75 % de hidrógeno, un 20 % de helio y 5 % de oxígeno, carbono, hierro y otros elementos</p>
-	</article>
-</div>
-<div class="planets-container">
-	<article class="planet-description">
-		<img src="" alt="Mercurio" class="planet-mercurio">
-		<img src="" alt="orbita" class="orbita-4">
-		<h2>Mercurio</h2>
-		<p class="description">Mercurio es el planeta del Sistema Solar más próximo al Sol y el más pequeño. Forma parte de los denominados planetas interiores o terrestres y carece de satélites al igual que Venus. Se conocía muy poco sobre su superficie hasta que fue enviada la sonda planetaria Mariner 10 y se hicieron observaciones con radar y radiotelescopios.</p>
-	</article>
+	<div class="solar-system">
+		<div class="hero">
+			<h3 class="subheader">EXPLORANDO EL </h3>
+			<h1 class="main-title">Sistema Solar</h1>
+			<span id="sun"></span>
+		</div>
+		<div class="planets-container">
+			<article class="planet-description">
+				<h2>El Sol</h2>
+				<p class="description">El Sol, una estrella de tipo espectral G2 que contiene más del 99,85 % de la masa del sistema. Con un diámetro de 1 400 000 km, se compone de un 75 % de hidrógeno, un 20 % de helio y 5 % de oxígeno, carbono, hierro y otros elementos</p>
+			</article>
 
-	<article class="planet-description">
-		<img src="" alt="Venus" class="planet-venus">
-		<img src="" alt="orbita" class="orbita-5">
-		<h2>Venus</h2>
-		<p class="description">Venus es el segundo planeta del Sistema Solar en orden de distancia desde el Sol, y el tercero en cuanto a tamaño, de menor a mayor, junto con Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor. Se trata de un planeta de tipo rocoso y terrestre, llamado con frecuencia el planeta hermano de la Tierra, ya que ambos son similares en cuanto a tamaño, masa y composición, aunque totalmente diferentes en cuestiones térmicas y atmosféricas. </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="tierra" class="planet-tierra">
-		<img src="" alt="luna" class="luna">
-		<img src="" alt="orbita" class="orbita-6">
-		<h2>Tierra</h2>
-		<p class="description">La Tierra (del latín Terra, deidad romana equivalente a Gea, diosa griega de la feminidad y la fecundidad) es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna. Es el más denso y el quinto mayor de los ocho planetas del sistema solar. También es el mayor de los cuatro terrestres.</p>
-	</article>
-	
-	<article class="planet-description">
-		<img src="" alt="Marte" class="planet-marte">
-		<img src="" alt="orbita" class="orbita-7">
-		<h2>Marte</h2>
-		<p class="description">Marte es el cuarto planeta del sistema solar en orden de distancia al Sol. Llamado así por el dios de la guerra de la mitología romana Marte, recibe a veces el apodo de planeta rojo debido a la apariencia rojiza que le confiere el óxido de hierro que domina su superficie. Tiene una atmósfera delgada formada por dióxido de carbono, y dos satélites: Fobos y Deimos. </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="Jupiter" class="planet-jupiter">
-		<img src="" alt="jupiter-luna-1" class="jupiter-luna-1">
-		<img src="" alt="jupiter-luna-2" class="jupiter-luna-2">
-		<img src="" alt="jupiter-luna-3" class="jupiter-luna-3">
-		<img src="" alt="orbita" class="orbita-8">
-		<h2>Jupiter</h2>
-		<p class="description">Júpiter es el quinto planeta del Sistema Solar. Forma parte de los denominados planetas exteriores o gaseosos. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="Jupiter" class="planet-jupiter">
-		<img src="" alt="orbita" class="orbita-9">
-		<h2>Jupiter</h2>
-		<p class="description">Júpiter es el quinto planeta del Sistema Solar. Forma parte de los denominados planetas exteriores o gaseosos. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="Saturno" class="planet-saturno">
-		<img src="" alt="Cometa" class="cometa">
-		<img src="" alt="orbita" class="orbita-10">
-		<h2>Saturno</h2>
-		<p class="description">Saturno es el sexto planeta del Sistema Solar, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde nuestro planeta. Su nombre proviene del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. El aspecto más característico de Saturno son sus brillantes anillos. Antes de la invención del telescopio, Saturno era el más lejano de los planetas conocidos y, a simple vista, no parecía luminoso ni interesante. </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="Urano" class="planet-urano">
-		<img src="" alt="Cometa" class="cometa">
-		<img src="" alt="orbita" class="orbita-11">
-		<h2>Urano</h2>
-		<p class="description">Urano es el séptimo planeta del Sistema Solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo «Οὐρανός») el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter). Aunque es detectable a simple vista en el cielo nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su escasa luminosidad y a la lentitud de su órbita. </p>
-	</article>
-
-	<article class="planet-description">
-		<img src="" alt="Neptuno" class="planet-Neptuno">
-		<img src="" alt="orbita" class="orbita-12">
-		<h2>Neptuno</h2>
-		<p class="description">Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores o gigantes gaseosos, y es el primero que fue descubierto gracias a predicciones matemáticas. Su nombre fue puesto en honor al dios romano del mar —Neptuno—, y es el cuarto planeta en diámetro y el tercero más grande en masa. Su masa es diecisiete veces la de la Tierra y ligeramente más masivo que su planeta «gemelo» Urano, que tiene quince masas terrestres y no es tan denso. </p>
-	</article>
-</div>
-
-<img src="" alt="siguiente-pagina" class="siguiente-pagina">
-
-
-<div id="othersMaya">
-    <div class="solar-maya">
-        <h2>Aventura Maya</h2>
-    </div>
-    <div class="sea-maya">
-        <h2>Mar profundo</h2>
-    </div>
-</div>
-
-<div class="footer">
-	<span class="footer-logo">Culture.ly</span>
-</div>
+			<article class="planet-description">
+				<img src="" alt="Mercurio" class="planet-mercurio">
+				<img src="" alt="orbita" class="orbita-4">
+				<h2>Mercurio</h2>
+				<p class="description">Mercurio es el planeta del Sistema Solar más próximo al Sol y el más pequeño. Forma parte de los denominados planetas interiores o terrestres y carece de satélites al igual que Venus. Se conocía muy poco sobre su superficie hasta que fue enviada la sonda planetaria Mariner 10 y se hicieron observaciones con radar y radiotelescopios.</p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Venus" class="planet-venus">
+				<img src="" alt="orbita" class="orbita-5">
+				<h2>Venus</h2>
+				<p class="description">Venus es el segundo planeta del Sistema Solar en orden de distancia desde el Sol, y el tercero en cuanto a tamaño, de menor a mayor, junto con Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor. Se trata de un planeta de tipo rocoso y terrestre, llamado con frecuencia el planeta hermano de la Tierra, ya que ambos son similares en cuanto a tamaño, masa y composición, aunque totalmente diferentes en cuestiones térmicas y atmosféricas. </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="tierra" class="planet-tierra">
+				<img src="" alt="luna" class="luna">
+				<img src="" alt="orbita" class="orbita-6">
+				<h2>Tierra</h2>
+				<p class="description">La Tierra (del latín Terra, deidad romana equivalente a Gea, diosa griega de la feminidad y la fecundidad) es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna. Es el más denso y el quinto mayor de los ocho planetas del sistema solar. También es el mayor de los cuatro terrestres.</p>
+			</article>
+			
+			<article class="planet-description">
+				<img src="" alt="Marte" class="planet-marte">
+				<img src="" alt="orbita" class="orbita-7">
+				<h2>Marte</h2>
+				<p class="description">Marte es el cuarto planeta del sistema solar en orden de distancia al Sol. Llamado así por el dios de la guerra de la mitología romana Marte, recibe a veces el apodo de planeta rojo debido a la apariencia rojiza que le confiere el óxido de hierro que domina su superficie. Tiene una atmósfera delgada formada por dióxido de carbono, y dos satélites: Fobos y Deimos. </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Jupiter" class="planet-jupiter">
+				<img src="" alt="jupiter-luna-1" class="jupiter-luna-1">
+				<img src="" alt="jupiter-luna-2" class="jupiter-luna-2">
+				<img src="" alt="jupiter-luna-3" class="jupiter-luna-3">
+				<img src="" alt="orbita" class="orbita-8">
+				<h2>Jupiter</h2>
+				<p class="description">Júpiter es el quinto planeta del Sistema Solar. Forma parte de los denominados planetas exteriores o gaseosos. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Jupiter" class="planet-jupiter">
+				<img src="" alt="orbita" class="orbita-9">
+				<h2>Jupiter</h2>
+				<p class="description">Júpiter es el quinto planeta del Sistema Solar. Forma parte de los denominados planetas exteriores o gaseosos. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Saturno" class="planet-saturno">
+				<img src="" alt="Cometa" class="cometa">
+				<img src="" alt="orbita" class="orbita-10">
+				<h2>Saturno</h2>
+				<p class="description">Saturno es el sexto planeta del Sistema Solar, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde nuestro planeta. Su nombre proviene del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. El aspecto más característico de Saturno son sus brillantes anillos. Antes de la invención del telescopio, Saturno era el más lejano de los planetas conocidos y, a simple vista, no parecía luminoso ni interesante. </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Urano" class="planet-urano">
+				<img src="" alt="Cometa" class="cometa">
+				<img src="" alt="orbita" class="orbita-11">
+				<h2>Urano</h2>
+				<p class="description">Urano es el séptimo planeta del Sistema Solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo «Οὐρανός») el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter). Aunque es detectable a simple vista en el cielo nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su escasa luminosidad y a la lentitud de su órbita. </p>
+			</article>
+			<article class="planet-description">
+				<img src="" alt="Neptuno" class="planet-Neptuno">
+				<img src="" alt="orbita" class="orbita-12">
+				<h2>Neptuno</h2>
+				<p class="description">Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores o gigantes gaseosos, y es el primero que fue descubierto gracias a predicciones matemáticas. Su nombre fue puesto en honor al dios romano del mar —Neptuno—, y es el cuarto planeta en diámetro y el tercero más grande en masa. Su masa es diecisiete veces la de la Tierra y ligeramente más masivo que su planeta «gemelo» Urano, que tiene quince masas terrestres y no es tan denso. </p>
+			</article>
+		</div>
+		<img src="" alt="siguiente-pagina" class="siguiente-pagina">
+	</div>
+	<div id="othersMaya">
+		<div class="solar-maya">
+			<h2>Aventura Maya</h2>
+		</div>
+		<div class="sea-maya">
+			<h2>Mar profundo</h2>
+		</div>
+	</div>
+	<div class="footer">
+		<span class="footer-logo">Culture.ly</span>
+	</div>
 {% endblock %}
-

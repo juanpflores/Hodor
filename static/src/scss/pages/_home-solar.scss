@@ -1,30 +1,58 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the solar system home page.
 // -----------------------------------------------------------------------------
+.solar-system{
+	  background-color: #00152c;
+	  color: white;
+	  padding: 3rem;
+}
 .hero{
+	height: 114vh;
+	position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;	
+    background-image: url("../img/solar/sol-bg.png"); 
 	
 	.main-title{
-
+		font-size: 7rem;
+		text-align: center;
+	}
+	.subheader{
+		font-size: 2rem;
+    	text-align: center;
+    	margin-bottom: -5rem;
 	}
 
-
-
 	#sun{
+	 position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
 
 	}	
 }
-img{
-	&.orbita-1{
-
-	}
-	&.orbita-2{
-
-	}
-	&.orbita-3{
-
+.planets-container{
+	margin-top: 115vh;
+	
+	article{
+		h2{
+			margin-left: 20rem;
+			font-size: 3rem;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 2rem;
+		}
+		p.description{
+			color: #f0f7ff;
+			font-weight: 100;
+			width: 30rem;
+			font-size: 1.6rem;
+			display: table-cell;
+		}
 	}
 }
-
 
 
 
