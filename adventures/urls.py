@@ -18,5 +18,12 @@ urlpatterns = [
         ),
         name='maya'
     ),
+    url(
+        r'^sistema-solar/$',
+        TemplateView.as_view(
+            template_name='solar.html'
+        ),
+        name='solar'
+    ),
     
 ]
