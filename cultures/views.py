@@ -1,5 +1,7 @@
 from django.shortcuts import get_object_or_404
 
+from django.db.models import Q
+
 from django.views.generic import(
     ListView,
     DetailView,
@@ -18,6 +20,20 @@ from .models import (
 class LandingView(ListView):
     template_name = 'prueba.html'
     model = Culture
+
+    def get_queryset(self):
+        queryset = self.queryset
+        q = self.request.GET.get('q', None)
+        if q is not None:
+            queryset = Culture.objects.filter(
+                Q(name__icontains=q) | Q(summary__icontains=q) |
+                Q(religion__name__icontains=q) | Q(religion__description__icontains=q) |  # NOQA
+                Q(region__name__icontains=q) | Q(region__country__name__icontains=q) |  # NOQA
+                Q(region__description__icontains=q)
+            )
+            return queryset
+        else:
+            return queryset
 
 
 class AdventureView(DetailView):
