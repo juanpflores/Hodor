@@ -17,9 +17,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^1.5.3",
-    "run-sequence": "^1.1.5"
-  },
-  "dependencies": {
-    "imagemin-pngquant": "^5.0.0"
+    "run-sequence": "^1.1.5",
+    "imagemin-pngquant": "^4.2.2"
   }
 }
