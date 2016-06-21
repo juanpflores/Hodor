@@ -295,6 +295,10 @@
 				border: 2px solid white;
 				text-align: center;
 				padding: .5rem 2rem;
+				& a {
+					color: white;
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -325,7 +329,7 @@
 		& img {
 			position: absolute;
 			right: 0;
-			width: 30%;
+			width: 42%;
 			margin-top: -20rem;
 		}
 	}
