@@ -3,32 +3,37 @@ body {
 }
 #heroMaya {
 	background: #f5a623;
-	height: 37rem;
+	height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
 	& img {
 		position: absolute;
 		width: 100%;
 	}
 	& .sun {
-
 		z-index: 0;
 	}
 	& .orangeBackground {
-
+		
 		z-index: 1;
+		bottom: 0;
 	}
 	& .title {
 
 		z-index: 2;
 	}
 	& .palm {
-
 		z-index: 3;
+		bottom: 0;
 	}
 	& .pyramid {
 		z-index: 4;
+		bottom: 0;
 	}
 	& .pinkBackground {
 		z-index: 5;
+		bottom: 0;
 	}
 }
 #levelsMaya {
@@ -136,12 +141,28 @@ body {
 		z-index: 1;
 	}
 }
+
+
+
+.parallax-layer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 #othersMaya {
 	& .solar-maya {
 		background-image: url("/static/img/maya/solar-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
 	}
 	& .sea-maya {
 		background-image: url("/static/img/maya/sea-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
 	}
 	& div {
 		width: 50%;
@@ -156,4 +177,5 @@ body {
 			width: 50%;
 		}
 	}
+
 }
