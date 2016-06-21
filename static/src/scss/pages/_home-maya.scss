@@ -145,18 +145,24 @@ body {
 
 
 .parallax-layer{
-	  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 #othersMaya {
 	& .solar-maya {
 		background-image: url("/static/img/maya/solar-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
 	}
 	& .sea-maya {
 		background-image: url("/static/img/maya/sea-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
 	}
 	& div {
 		width: 50%;
