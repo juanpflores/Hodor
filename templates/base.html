@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/pages/phi-landing/main.min.css" %}">
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+    {% block css %}{% endblock %}
+    {% block js %}
+    {% endblock %}
+</html>
