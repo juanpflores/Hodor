@@ -30,7 +30,7 @@
             <p>
                 La civilización maya ocupó un extenso territorio que incluía el sureste de México y el norte de América Central; abarcó toda la península de Yucatán, la totalidad de Guatemala y Belice, así como la porción occidental de Honduras y El Salvador. La mayor parte de la península se compone de una vasta planicie con pocas colinas o montañas y una zona costera generalmente baja.
             </p>
-            <img class="map-maya" src="{% static 'img/maya/map-maya.png' %}" alt="">
+            <img class="map-maya animated" src="{% static 'img/maya/map-maya.png' %}" alt="">
             <p>
                 La región del Petén se compone de una llanura baja de piedra caliza, cubierta de bosque  una serie de catorce lagos atraviesa la cuenca de drenaje central del Petén. En el sur, la llanura sube gradualmente hacia el altiplano de Guatemala. Una selva densa cubre el norte de Petén y Belice, la mayor parte de Quintana Roo, el sur de Campeche y una parte del sur del estado de Yucatán. Más hacia el norte, la vegetación se convierte en bosque bajo compuesto de matorrales densos.
             </p>
@@ -62,7 +62,7 @@
                     <span class="level">Nivel 4</span>
                 </div>
                 <div>
-                    <img class="zona1" src="{% static 'img/maya/zona1-maya.png' %}" alt="">
+                    <img class="zona1 animated" src="{% static 'img/maya/zona1-maya.png' %}" alt="">
                     <p>
                         Los mayas produjeron una gran variedad de estructuras arquitectónicas y dejaron un extenso legado arquitectónico, que sitúan a la civilización maya entre las grandes civilizaciones preindustriales del mundo. La arquitectura maya también incorpora textos glíficos y varias formas de arte. La arquitectura de mampostería de los mayas es evidencia de la existencia de especialización artesanal en la sociedad maya, así como una organización centralizada y los medios políticos para movilizar una gran fuerza de trabajo. Se estima que para la construcción de una gran residencia de élite en Copán se necesitaba unos 10.686 días-hombre; en comparación, para la vivienda de un comunero se necesitaba aproximadamente 67 días-hombre
                     </p>
@@ -71,7 +71,7 @@
                     {% endfor %}
                 </div>
                 <div>
-                    <img class="zona2" src="{% static 'img/maya/zona2-maya.png' %}" alt="">
+                    <img class="zona2 animated" src="{% static 'img/maya/zona2-maya.png' %}" alt="">
                     <p>
                         Se estima además que el 65 % de la mano de obra requerida para construir una residencia noble fue utilizado para la extracción, el transporte, y el acabado de la piedra, y que se utilizó el 24 % de la mano de obra para la fabricación y aplicación del revestimiento de yeso. En total, se estima que se necesitaba dos o tres meses para la construcción de la residencia de un noble en Copán, utilizando entre 80 y 130 trabajadores a tiempo completo. Una ciudad del periodo Clásico como Tikal tenía una extensión de 20 km².
                     </p>
@@ -92,4 +92,6 @@
 {% block css %}
 {% endblock %}
 {% block js %}
+    <script src="{% static 'js/libs/jquery.min.js' %}"></script>
+    <script src="{% static 'js/scripts/parallax-maya.min.js' %}"></script>
 {% endblock %}
