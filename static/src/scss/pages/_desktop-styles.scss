@@ -241,3 +241,26 @@ footer {
 		color: white;
 	}
 }
+
+//Navbar
+
+#header{
+  .navbar-container{
+  	position: absolute;
+  	margin-left: 10vw;
+    color: white;
+    z-index: 999999;
+  }
+  .hamburger{
+  	background-image: url("/static/img/navbar/menu.png");
+  	height: 85px;
+    width: 192px;
+    position: fixed;
+    top: 0;
+    right: 20vw;
+    p{
+    	padding-left: 3rem;
+
+    }
+  }
+}
