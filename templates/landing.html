@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{% endblock %}
+{% block content %}
+  <div id="heroLand">
+    <img src="{% static 'img/land/blue-land.png' %}" alt="">
+    <img class="figures" src="{% static 'img/land/figures-land.png' %}" alt="">
+    <h2>¿Qué quieres aprender hoy?</h2>
+    <div class="form-tema">
+      <input type="text" placeholder="Buscar por tema">
+      <button class="buscar-button">Buscar</button>
+    </div>
+    <div class="themes">
+      <span>Temas Populares</span>
+      <ul>
+        <li><a href="{% url 'maya' %}">Aventura Maya</a></li>
+        <li>Antiguo Egipto</li>
+        <li>Mesopotamia</li>
+        <li>Mar profundo</li>
+        <li><a href="{% url 'solar' %}">El Sistema solar</a></li>
+        <li>Pais: México</li>
+      </ul>
+    </div>
+  </div>
+  <div id="usLand">
+    <div class="us-info">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Culturely es la primera plataforma
+        de educación hecha por y para
+        jovenes.
+      </p>
+      <p>
+        Prepara tu tarea, estudia para
+        tus pruebas y domina el tema
+        sin aburrirte.
+      </p>
+      <button class="suscribe-button">Suscribete</button>
+      <img src="{% static 'img/land/pyramid-land.png' %}" alt="">
+      <img src="{% static 'img/land/sky-land.png' %}" alt="">
+    </div>
+  </div>
+  <div id="monthLand">
+    <img class="play-image" src="{% static 'img/land/play-land.png' %}" alt="">
+    <img class="form-image" src="{% static 'img/land/form-land.png' %}" alt="">
+  </div>
+  <style>
+    body {
+      background: #00122e;
+    }
+  </style>
+{% endblock %}   
+{% block css %}
+{% endblock %}
+{% block js %}
+    <script src="{% static "js/reactJS/react.min.js" %}"></script> 
+    <script src="{% static "js/reactJS/react-dom.min.js"%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+{% endblock %}

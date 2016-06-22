@@ -1,0 +1,386 @@
+//MAYA
+#heroMaya {
+	height: 38rem;
+}
+#levelsMaya {
+	z-index: 15;
+	& .camino-linea {
+		position: absolute;
+		margin-top: 7rem;
+		margin-left: 3rem;
+		right: 0;
+		z-index: 0;
+		display: block;
+	}
+	& .pinkLevel {
+		background: #e5006c;
+		padding: 2rem 21rem 5rem 21rem;
+		& .level1 {
+			padding-bottom: 3rem;
+		}
+		& .level2 {
+			padding: 3rem 0;
+		}
+		& p {
+			color: white;
+			font-weight: 300;
+			padding: 1rem 0;
+			font-size: 1.2rem;
+		}
+		& .map-maya {
+			float: right;
+			width: 50%;
+		}
+	}
+	& .blueLevel {
+		background: #1f67e1;
+		& .temple-maya {
+			background-image: url("/static/img/maya/templo-maya.png");
+			background-size: cover;
+			height: 20rem;
+			padding: 5rem 19rem;
+			& span {
+				margin-top: 1rem;
+			}
+			& h2 {
+				color: white;
+				font-size: 6.5rem;
+				text-align: center;
+			}
+		}
+		& ul {
+			background: #e5006c;
+			width: 60%;
+			margin-left: 20%;
+			border-radius: 100px;
+			text-align: center;
+			position: absolute;
+			margin-top: -2rem;
+			display: block;
+			& li {
+				display: inline-block;
+				padding: 1rem;
+				color: white;
+			}
+		}
+		& .blue-content {
+			padding: 5rem 21rem 16rem 21rem;
+			& p {
+
+				padding: 1.5rem 0;
+			}
+			& .level4 {
+				padding: 0;
+				padding-bottom: 3rem;
+			}
+
+			& .page2 {
+				position: absolute;
+				width: 40%;
+				right: 15rem;
+				margin-top: 2.6rem;
+			}
+		}
+		
+	}
+}
+#othersMaya {
+	& div {
+		width: 50%;
+	}
+}
+
+//Solar 
+
+.solar-system{
+      background-color: #00122d ;
+      color: white;
+      padding: 3rem;
+}
+.hero{ 
+	background-image: url("/static/img/solar/sun-solar.png");
+	height: 65rem;
+	& .star-div {
+		background-image: url("/static/img/solar/stars-solar.png");
+		width: 80%;
+		margin-left: 10%;
+		color: white;
+		text-align: center;
+		padding: 12rem 0 1rem 0;
+	}
+	& article {
+		width: 60%;
+		margin-left: 20%;
+		color: white;
+		margin-top: 30rem;
+		& h2{
+			margin-left: 20rem;
+			font-size: 2rem;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 2rem;
+		}
+		& p {
+			display: table-cell;
+			font-size: 300;
+			font-size: 1rem;
+			padding: 0 10rem;
+		}
+	}
+}
+.planets-container{
+	background: #00122d;
+    article{
+    	& img {
+    		position: absolute;
+    		display: block;
+    	}
+    	& .orbita {
+    		position: relative;
+    	}
+    	& .planet-mercurio {
+    		margin-top: -5rem;
+    		margin-left: 10rem;
+    		z-index: 1;
+    	}
+    	& .planet-venus {
+    		margin-top: -5rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-tierra {
+    		margin-top: -9rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-marte {
+    		margin-top: -5rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-jupiter {
+    		margin-top: -10rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-saturno {
+    		margin-top: -9rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-urano {
+    		margin-top: -8rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+    	& .planet-neptuno {
+    		margin-top: -6rem;
+    		margin-left: -5rem;
+    		z-index: 1;
+    	}
+   		& div{
+        	width: 60%;
+        	margin-left: 20%;
+        	color: white;
+        	padding: 14rem 0;
+        	& h2{
+	            margin-left: 20rem;
+	            font-size: 2rem;
+	            display: table-cell;
+	            vertical-align: middle;
+	            padding-right: 2rem;
+        	}
+        	& p {
+        		display: table-cell;
+        		font-size: 300;
+        		font-size: 1rem;
+        		padding: 0 4rem;
+        	}
+    	}
+    }
+    .page-2 {
+    	position: absolute;
+    	margin-top: -13.1rem;
+    	right: 2rem;
+    }
+}
+
+#othersSolar {
+	& .solar-maya {
+		background-image: url("/static/img/solar/maya-solar.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
+	}
+	& .sea-maya {
+		background-image: url("/static/img/maya/sea-maya.png");
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover { transform: scale(1.1); }
+	}
+	&  div {
+		width: 50%;
+		float:left;
+		z-index: 10;
+		height: 15rem;
+		background-size: cover;
+		& h2 {
+			color: white;
+			font-size: 2em;
+			margin: 4rem 0 0 5rem;
+			width: 50%;
+		}
+	}
+}
+//Landig
+#heroLand {
+	background: #00122e;
+	& img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+	}
+	.figures {
+		top: 1rem;
+		left: 5rem;
+	}
+	& h2 {
+		margin: 0;
+		color: white;
+		text-align: center;
+		padding: 15rem 0 5rem 0;
+	}
+	& .form-tema {
+		border-radius: 100px;
+		padding: 1rem;
+		border: 2px solid white;
+		width: 50%;
+		margin-left: 25%;
+		& input {
+			background: none;
+			border: none;
+			outline: 0;
+			width: 80%;
+			color: white;
+		}
+		& .buscar-button {
+			background-image: linear-gradient(to bottom, #199de0, #046ee9);
+			border-radius: 100px;
+			float: right;
+			border-radius: 100px;
+			border: 0px;
+			color: white;
+			padding: .3rem 2rem;
+		}
+	}
+	& .themes {
+		margin-left: 20%;
+		padding-top: 3rem;
+		& span {
+			text-transform: uppercase;
+			color: white;
+		}
+		& ul {
+			list-style: none;
+			color: white;
+			width: 70%;
+			margin-left: 4%;
+			margin-bottom: 0;
+			& li {
+				margin-bottom: 2rem;
+				display: inline-block;
+				width: 30%;
+				border-radius: 100px;
+				border: 2px solid white;
+				text-align: center;
+				padding: .5rem 2rem;
+				& a {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+}
+#usLand {
+	background: #00122e;
+	& .us-info {
+		width: 30%;
+		margin-left: 20%;
+		padding-top: 5rem;
+		& h2 {
+			color: #f0d609;
+			margin: 0;
+		}
+		& p {
+			color: white;
+			margin-bottom: 3rem;
+			font-weight: 300;
+		}
+		& .suscribe-button {
+			border-radius: 100px;
+			color: #d31f72;
+			background: #f0d609;
+			border: 0;
+			padding: .5rem 2rem;
+		}
+		& img {
+			position: absolute;
+			right: 0;
+			width: 42%;
+			margin-top: -20rem;
+		}
+	}
+}
+#monthLand {
+	background-image: url("/static/img/land/sun-land.png");
+	background-size: 90% 90%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 70rem;
+	& .form-image {
+		width: 100%;
+		margin-top: 35rem;
+	}
+	& .play-image {
+		position:absolute;
+		margin-top: 45rem;
+		margin-left: 50rem;
+	}
+}
+
+
+//Footer 
+footer {
+	padding: 4rem 15rem;
+	background: #4a4a4a;
+	margin-top: 15rem;
+	& span {
+		color: white;
+	}
+}
+
+//Navbar
+
+#header{
+  .navbar-container{
+  	position: absolute;
+  	margin-left: 10vw;
+    color: white;
+    z-index: 999999;
+  }
+  .hamburger{
+  	background-image: url("/static/img/navbar/menu.png");
+  	height: 85px;
+    width: 192px;
+    position: fixed;
+    top: 0;
+    right: 20vw;
+    p{
+    	padding-left: 3rem;
+
+    }
+  }
+}

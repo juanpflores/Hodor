@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+
+
+// 7. Themes
+@import
+  'themes/default';
+
+
+@import "pages/_mobile-styles";
+
+// Tablet Styles
+@media only screen and (min-width: $breakpoint-tablet) {
+  @import "pages/_tablet-styles";
+}
+
+// Desktop Styles
+@media only screen and (min-width: $breakpoint-desktop) {
+  @import "pages/_desktop-styles";
+}
+
+// HD Styles
+@media only screen and (min-width: $breakpoint-hd) {
+  @import "pages/_hd-styles";
+}

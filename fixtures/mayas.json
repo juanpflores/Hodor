@@ -1,0 +1,300 @@
+[
+    {
+        "model": "places.country",
+        "pk": 1,
+        "fields": {
+            "name": "México",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.country",
+        "pk": 2,
+        "fields": {
+            "name": "Guatemala",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.country",
+        "pk": 3,
+        "fields": {
+            "name": "El Salvador",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.region",
+        "pk": 1,
+        "fields": {
+            "name": "Mesoamérica",
+            "country": 1,
+            "description": "Mesoamérica significa 'América media'. Este término se propuso para referirse a un espacio cultural que abarca desde la parte meridional de México hasta Costa Rica, el cual se diferencia de otras regiones por la forma de vida de sus pobladores, su clima y su geografía. Mesoamérica es un espacio de climas y paisajes variados, como valles, bosques, costas, pantanos y selvas. Sus tierras eran húmedas y fértiles, adecuadas para la agricultura, además había numerosos lagos y ríos. Aun con esa diversidad, los habitantes de la región tenían ciertas características en común, por ejemplo, sus sociedades se organizaban en grupos con diferentes funciones e importancia. Por una parte los gobernantes, divididos en jefes religiosos y militares, y, por otra, artesanos y campesinos. Esta división social se manifestó en los palacios, templos, habitaciones y espacios urbanos en los que los gobernantes vivían. Su dieta constaba de maíz, frijol, chile, calabaza, aguacate y cacao. Hicieron importantes obras para controlar y aprovechar el agua de lluvia, ríos y lagos. Su religión era politeísta tenían creencias religiosas que combinaban con conocimientos de astronomía, matemáticas, ingeniería, arte, escritura y medicina. Además destacan los basamentos piramidales y edificaciones que construyeron en las ciudades para el ritual de juego de pelota. Inventaron un sistema de numeración con base vigesimal y su escritura era ideográfica, es decir, dibujaban símbolos que representaban ideas. Se regían por dos calendarios diferentes: el de 365 días para las actividades agrícolas y el de 260 para sus creencias religiosas. Con sus mitos intentaron explicar la complejidad del mundo natural y el humano, tratando de preservar la armonía entre ambos.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.region",
+        "pk": 2,
+        "fields": {
+            "name": "Aridoamérica",
+            "country": 2,
+            "description": "Aridoamérica es la denominación que se da a la amplia área cultural que se extiende al norte de los límites de Mesoamérica. Los confines norteños de la región aridoamericana alcanzan la latitud distante del paralelo 42°. Se trata de un área con una poca diversidad ecológica, a diferencia de sus vecinas Oasisamérica y Mesoamérica.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 1,
+        "fields": {
+            "name": "Chichen Itzá",
+            "region": 1,
+            "latitude": 20.6667,
+            "longitude": -88.5667,
+            "description": "Chichén Itzá (en maya: Chichén Itzá, ‘Boca-del-pozo (chichén) de los brujos-de-agua (Itzá)’) es uno de los principales sitios arqueológicos de la península de Yucatán, en México, ubicado en el municipio de Tinum, en el estado de Yucatán. Vestigio importante y renombrado de la civilización maya, las edificaciones principales que ahí perduran corresponden al periodo denominado clásico tardío o postclásico temprano (800-1100 dC.).\nLa arquitectura monumental que ha llegado hasta nuestros días, que es emblemática del yacimiento, tiene una clara influencia tolteca. El dios que preside el sitio, según la mitología maya, es Kukulcán, representación maya de Quetzalcóatl, dios tomado del panteón de la cultura tolteca.\nChichén Itzá fue una ciudad o un centro ceremonial, que pasó por diversas épocas constructivas e influencias de los distintos pueblos que la ocuparon y que la impulsaron desde su fundación.\nLa zona arqueológica de Chichén Itzá fue inscrita en la lista del Patrimonio de la Humanidad por la Unesco en 1988. El 7 de julio de 2007, el Templo de Kukulcán, ubicado en Chichén Itzá, fue reconocido como una de las Las nuevas siete maravillas del mundo moderno, por una iniciativa privada sin el apoyo de la Unesco, pero con el reconocimiento de millones de votantes alrededor del mundo.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 2,
+        "fields": {
+            "name": "Xel-Há",
+            "region": 1,
+            "latitude": 21.1629,
+            "longitude": -86.8338,
+            "description": "Xel-Há es un parque ecológico ubicado en el estado de Quintana Roo, México. Se caracteriza por una gran caleta en la que el agua de un río se une al Mar Caribe, conformando el espacio idóneo para la convivencia de 70 especies marinas y de agua dulce. Es por esta razón que Xel-Há es conocido como el acuario natural más grande del mundo. Asimismo, por ser el espacio de numerosos ejemplares de flora y fauna de la región, se le otorgó a Xel-Há el título de Maravilla Natural de México en una reciente convocatoria a nivel nacional.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 3,
+        "fields": {
+            "name": "Tulum",
+            "region": 1,
+            "latitude": 20.125,
+            "longitude":  -87.450,
+            "description": "Tulum o Tuluum fue una ciudad amurallada de la cultura maya ubicada en el Estado de Quintana Roo, en el sureste de México, en la costa del mar Caribe. Es en la actualidad un gran atractivo turístico de la Riviera Maya y junto a ella se encuentra la moderna población del mismo nombre, Tulum. La ciudad maya se encuentra dentro del Parque nacional Tulum.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.language",
+        "pk": 1,
+        "fields": {
+            "name": "Protomaya",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.language",
+        "pk": 2,
+        "fields": {
+            "name": "Maya",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.religion",
+        "pk": 1,
+        "fields": {
+            "name": "Religión Maya",
+            "description": "La religión maya es una religión precolombina que estaba firmemente unida a la ideología reinante, de manera que dedicara esta a la veneración de los dioses. La religión se preocupaba de entender el porqué de las cosas lo que nos lleva a definirla como una especie de filosofía precursora de la ciencia moderna. Así pues, no se pueden concebir por separado los descubrimientos científicos mayas, la ideología, y la religión, ya que todas tienen, aunque sea en un inicio, su origen en la fe y la creencia.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 1,
+        "fields": {
+            "name": "Arcaíco",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 2,
+        "fields": {
+            "name": "Preclásico",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 3,
+        "fields": {
+            "name": "Clásico",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 4,
+        "fields": {
+            "name": "Posclásico",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.period",
+        "pk": 5,
+        "fields": {
+            "name": "Periodo de Contacto",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culture",
+        "pk": 1,
+        "fields": {
+            "name": "Maya",
+            "region": 1,
+            "languages": [1,2],
+            "summary": "La civilización maya fue una civilización mesoamericana desarrollada por los pueblos mayas, que destacó en América1 por su escritura glífica, el único sistema de escritura plenamente desarrollado del continente americano precolombino, así como por su arte, arquitectura y sistemas de matemática y de astronomía. Se desarrolló en la región que abarca el sureste de México y que corresponde a los estados de Yucatán, Campeche, Tabasco, Quintana Roo y la zona oriental de Chiapas, así mismo la mayor parte de Guatemala, Belice, y la parte occidental de Honduras y El Salvador. Esta región se compone de las tierras bajas del norte que abarca la península de Yucatán, las tierras altas de la Sierra Madre que se extiende por el estado mexicano de Chiapas, el sur de Guatemala hasta El Salvador, y las tierras bajas del sur en la llanura litoral del Pacífico.",
+            "_year": 2000,
+            "_era": "ac",
+            "religion": 1,
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.god",
+        "pk": 1,
+        "fields": {
+            "name": "Chaac",
+            "culture": 1,
+            "description": "Es uno de los dioses más importantes y venerados en la Península deYucatán. Está relacionado con la lluvia, el relámpago y el agua en general. Se le representa con una larga nariz y colmillos encorvados hacia atrás que salen de su boca así como un tocado en su cabeza de telas y madera. En el arte maya, tanto en la escultura como en la arquitectura, se puede identificar a Chaac por estos atributos. Incluso en algunas zonas arqueológicas de la Península de Yucatán, como Kabah, se pueden encontrar estructuras bellamente decoradas con mascarones de este dios con su peculiar nariz y colmillos.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.god",
+        "pk": 2,
+        "fields": {
+            "name": "Hunab Ku",
+            "culture": 1,
+            "description": "Es el dios más importante del panteón maya. En él se conjugan las dualidades, es decir, los elementos opuestos como los masculinos y los femeninos por lo que tiene la capacidad de crear. Así dio origen al  universo. Para los mayas es de Hunab Ku de quien procede todo. De él nacen todas las cosas y los seres vivos del universo y a él retornan. Es el todo y la nada a la vez. También era considerado el padre de todos los dioses.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.god",
+        "pk": 3,
+        "fields": {
+            "name": "Kukulcán",
+            "culture": 1,
+            "description": "Kukulcán es otro de los dioses más importantes del panteón maya por su condición de deidad creadora del universo. Está relacionado con el viento y la sabiduría; su nombre significa serpiente emplumada en maya. Es el equivalente al Quetzalcóatl de los aztecas, con sus largas e iridiscentes plumas de quetzal, y al Gucumatz de la cultura quiché. En el arte maya se han encontrado frecuentemente símbolos de pájaros-serpiente que podrían considerarse emblemáticos de esta deidad, vista también como un héroe que llegó desde lejos vistiendo atuendos extraños y con costumbres extranjeras. A él se le atribuye la invención y enseñanza de la escritura al pueblo maya.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.temple",
+        "pk": 1,
+        "fields": {
+            "name": "Pirámide de Kukulkán",
+            "culture": 1,
+            "place": 1,
+            "description": "El Templo de Kukulkán o Pirámide de Kukulkán (estructura también conocida con el nombre de «El Castillo», debido a que los conquistadores españoles en el siglo XVI buscaban alguna similitud arquitectónica con las existentes en el continente europeo), es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre. El actual templo fue construido en el siglo XII d. C. por los mayas itzáes en su capital, la ciudad prehispánica de Chichén Itzá en el siglo VI d. C.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.museum",
+        "pk": 1,
+        "fields": {
+            "name": "Museo de la Cultura Maya",
+            "cultures": [1],
+            "place": 1,
+            "description": "El Museo de la Cultura Maya (MCM) Ubicado en el estado Mexicano de Quintana Roo, es uno de los recintos museográficos más importantes de la civilización maya en México. Este museo plasma la forma de vida, cotidianidad y grandeza arquitectónica de la cultura Maya, así como su sistema calendárico y cosmovisión. Representaciones artísticas, escenografía e iluminación son la base del la exhibición.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 1,
+        "fields": {
+            "period": 1,
+            "culture": 1,
+            "begining_year": "8000 a.C.",
+            "ending_year": "2000 a.C.",
+            "description": "Viejo.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 2,
+        "fields": {
+            "period": 2,
+            "culture": 1,
+            "begining_year": "2000 a.C.",
+            "ending_year": "250 d.C.",
+            "description": "Los mayas desarrollaron su primera civilización en el período Preclásico. Los estudiosos continúan discutiendo cuando comenzó ésta era de la civilización maya. La ocupación maya en Cuello, Belice ha sido fechada alrededor de 2600 a. C. Los asentamientos se establecieron alrededor de 1800 a. C. en la región del Soconusco en la costa del Pacífico, y los mayas ya cultivaban cultivos básicos como maíz, frijol, calabaza y chile. Este período se caracterizó por la existencia de comunidades sedentarias y la introducción de la cerámica y figurillas de barro cocido.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 3,
+        "fields": {
+            "period": 3,
+            "culture": 1,
+            "begining_year": "250 d.C.",
+            "ending_year": "900 d.C.",
+            "description": "El período Clásico se define en gran medida como el período en que los mayas de las tierras bajas levantaron monumentos fechados, utilizando el calendario de la Cuenta larga.Este período marcó el apogeo de la construcción a gran escala y del urbanismo, la realización de inscripciones monumentales, y mostró un desarrollo intelectual y artístico significativo, sobre todo en las regiones de las tierras bajas del sur.El panorama político del período Clásico maya, caracterizado por múltiples ciudades-Estado involucrados en una compleja red de alianzas y enemistades, ha sido comparado con el de Italia durante el Renacimiento o Grecia clásica. Las ciudades mayores tenían una población de 50.000 a 120.000 habitantes y estaban conectados por redes de ciudades subsidiarias.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 4,
+        "fields": {
+            "period": 4,
+            "culture": 1,
+            "begining_year": "950 d.C.",
+            "ending_year": "1539 d.C.",
+            "description": "Después del abandono de las principales ciudades del período Clásico, una significativa, aunque mucho más reducida, presencia maya permaneció en el periodo Posclásico, concentrándose sobre todo cerca de las fuentes de agua permanentes.  A diferencia de los ciclos de contracción anteriores en la región maya, las tierras abandonadas no fueron rápidamente reasentadas durante el Posclásico.El centro de actividad se trasladó a las tierras bajas del norte y las tierras altas mayas; es posible que esto haya coincidido con la migración desde las tierras bajas del sur, ya que muchos grupos del Posclásico maya tenían mitos sobre migraciones.Chichén Itzá y sus vecinos Puuc declinaron drásticamente en el siglo xi, lo que puede representar el episodio final del período del colapso clásico. Después de la caída de Chichén Itzá, la región maya carecía de un poder dominante hasta el surgimiento de la ciudad de Mayapán en el siglo XII. Nuevas ciudades surgieron cerca de las costas del Caribe y del golfo de México, y se formaron nuevas redes comerciales.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    },
+    {
+        "model": "cultures.culturehasperiod",
+        "pk": 5,
+        "fields": {
+            "period": 5,
+            "culture": 1,
+            "begining_year": "1511 d.C.",
+            "ending_year": "1697 d.C.",
+            "description": "Nuevo.",
+            "created": "2016-05-06T20:02:24.127Z", 
+            "modified": "2016-05-06T20:02:24.128Z"
+        }
+    }
+]
