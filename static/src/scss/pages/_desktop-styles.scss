@@ -1,6 +1,6 @@
 //MAYA
 #heroMaya {
-	height: 38rem;
+	height: 43rem;
 }
 #levelsMaya {
 	z-index: 15;
@@ -107,12 +107,15 @@
 		color: white;
 		text-align: center;
 		padding: 12rem 0 1rem 0;
+		& h1 {
+			font-size: 6rem;
+		}
 	}
 	& article {
 		width: 60%;
 		margin-left: 20%;
 		color: white;
-		margin-top: 30rem;
+		margin-top: 18rem;
 		& h2{
 			margin-left: 20rem;
 			font-size: 2rem;
@@ -351,7 +354,6 @@
 	}
 }
 
-
 //Footer 
 footer {
 	padding: 4rem 15rem;
@@ -370,6 +372,12 @@ footer {
   	margin-left: 10vw;
     color: white;
     z-index: 999999;
+    & h2 {
+    	& a {
+    		color: white;
+    		text-decoration: none;
+    	}
+    }
   }
   .hamburger{
   	background-image: url("/static/img/navbar/menu.png");
